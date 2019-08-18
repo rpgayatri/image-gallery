@@ -6,7 +6,7 @@ Github Pages link - https://rpgayatri.github.io/image-gallery/
 
 ## Credits
 1. Wes Bos, for his funtabulous series - [JavaScript30](https://javascript30.com/)
-2. To all the below photographers for their open source images which I used for the gallery.
+2. To all the below amazing photographers for their open source images which I used for the gallery : 
  * [Drew Colins](https://unsplash.com/photos/LIEQsu5JuoM )
  * [Gianandrea Villa](https://unsplash.com/photos/LkHXBKpwhZ8)
  * [Arina Wong](https://unsplash.com/photos/GNE9bfYY1hw)
