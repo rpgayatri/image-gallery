@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Gorditas", cursive;
+}
+
+.panels {
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: lightyellow;
+  text-align: center;
+  align-items: center;
+  /* Safari transitionend event.propertyName === flex */
+  /* Chrome + FF transitionend event.propertyName === flex-grow */
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 35px;
+  text-shadow: -1px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1px black;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel > * {
+  display: flex;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  transition: transform 0.5s;
+}
+
+.panel1 {
+  background-image: url("images/dance.jpg");
+}
+
+.panel2 {
+  background-image: url("images/give_take.jpg");
+}
+
+.panel3 {
+  background-image: url("images/experience.jpg");
+}
+
+.panel4 {
+  background-image: url("images/effort.jpg");
+}
+
+.panel5 {
+  background-image: url("images/motion.jpg");
+}
+
+.panel :first-child {
+  transform: translateY(-100%);
+}
+
+.panel :last-child {
+  transform: translateY(100%);
+}
+
+.panel.show :first-child {
+  transform: translateY(0%);
+}
+
+.panel.show :last-child {
+  transform: translateY(0%);
+}
+
+.panel :nth-child(2) {
+  font-size: 65px;
+}
+
+.panel.show :nth-child(2) {
+  font-size: 70px;
+}
+
+.panel.grow {
+  flex-grow: 6;
+}
